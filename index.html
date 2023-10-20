@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-side">
+        <div class="head">
+          <h1>Current</h1>
+          <h3>Position</h3>
+        </div>
+        <img style="width: 700px" src="./img/c.png" alt="Your Image" />
+      </div>
+
+      <div class="right-side">
+        <div class="right-head">
+          <h1>Apply Here</h1>
+        </div>
+        <form>
+          <div class="form-group">
+            <label for="applyFor"
+              ><span style="color: red">*</span>Apply For:</label
+            >
+            <input type="text" id="applyFor" name="applyFor" />
+          </div>
+
+          <div class="form-group">
+            <label for="name"><span style="color: red">*</span>Name:</label>
+            <input type="text" id="name" name="name" />
+          </div>
+
+          <div class="form-group">
+            <label for="contactNo"
+              ><span style="color: red">*</span>Contact No:</label
+            >
+            <input type="text" id="contactNo" name="contactNo" />
+          </div>
+
+          <div class="form-group">
+            <label for="email"
+              ><span style="color: red">*</span>Email Address:</label
+            >
+            <input type="text" id="email" name="email" />
+          </div>
+
+          <div class="form-group">
+            <label for="gender"><span style="color: red">*</span>Gender:</label>
+            <select id="gender" name="gender" style="width: 287px">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="resume"
+              ><span style="color: red">*</span>Upload Resume:</label
+            >
+            <div class="upload-btn-wrapper">
+              <input type="text" id="resume" name="resume" readonly />
+              <label for="file-upload" class="browse-button">Browse</label>
+              <input type="file" id="file-upload" name="file-upload" />
+            </div>
+          </div>
+
+          <div class="bottom">
+            <div class="form-checkbox">
+              <label for="checkbox"
+                ><input type="checkbox" id="checkbox" name="checkbox" /><span
+                  style="color: red"
+                  >*</span
+                >I have read and accept terms of use and privacy policy.</label
+              >
+            </div>
+
+            <div class="form-group">
+              <input type="submit" value="Submit Application" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
